@@ -4,6 +4,7 @@ pipeline:
     commands:
       - which go
       - pwd
+      - echo GOPATH=$GOPATH
       - go get
       - go build
       - go test
