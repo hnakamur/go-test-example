@@ -2,6 +2,8 @@ pipeline:
   go:
     image: golang
     commands:
+      - which go
+      - pwd
       - go get
       - go build
       - go test
