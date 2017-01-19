@@ -1,10 +1,13 @@
+---
+# NOTE: Refer drone Go example http://readme.drone.io/0.5/usage/golang-example/
+workspace:
+  base: /go
+  path: src/github.com/hnakamur/go-test-example
+
 pipeline:
-  go:
+  build:
     image: golang
     commands:
-      - which go
-      - pwd
-      - echo GOPATH=$GOPATH
       - go get
       - go build
       - go test
