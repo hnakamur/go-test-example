@@ -11,3 +11,5 @@ pipeline:
       - go get
       - go build
       - go test
+  notify:
+    image: plugins/slack
